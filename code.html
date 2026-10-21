@@ -168,12 +168,13 @@
 <!-- SECTION 1: EDITORIAL HERO SECTION (Matching Image 1 & 2 Aesthetic) -->
 <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16">
 <!-- Top Architectural Image Hero Tile (From Image 1) -->
-<div class="relative w-full h-[400px] sm:h-[480px] lg:h-[540px] rounded-lg overflow-hidden border border-outline-variant/30 mb-8 shadow-sm">
+<div class="relative w-full rounded-lg overflow-hidden border border-outline-variant/30 shadow-sm flex flex-col lg:flex-row">
+<!-- Image: mobile = full width on top; desktop = left column -->
+<div class="w-full lg:w-1/2 h-[400px] sm:h-[480px] lg:h-auto shrink-0">
 <img class="w-full h-full object-cover object-position-center" data-alt="Interior de clínica de estética premium, minimalista e ensolarada, com superfícies de calcário polido, janelas de vidro do chão ao teto, acentos de carvalho claro, plantas tropicais bem cuidadas e móveis de designer elegantes. Iluminação ambiente suave da manhã cria uma atmosfera serena em tons neutros de creme e marfim." src="assets/images/hero.png"/>
-<!-- Editorial Gradient Overlay -->
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/25 to-transparent"></div>
-<!-- Hero Overlay Content -->
-<div class="absolute bottom-0 left-0 p-6 sm:p-10 lg:p-14 max-w-2xl text-surface">
+</div>
+<!-- Text: mobile = stacked below image; desktop = right column -->
+<div class="w-full lg:w-1/2 p-6 sm:p-10 lg:p-14 flex flex-col justify-center text-surface max-w-2xl mx-auto lg:mx-0">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface/20 backdrop-blur-md border border-surface/30 mb-4">
 <span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
 <span class="font-label-uppercase text-label-uppercase tracking-widest text-surface">Precisão Médica Sob Medida</span>
