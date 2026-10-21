@@ -133,6 +133,12 @@ typography:
     fontWeight: '500'
     lineHeight: 16px
     letterSpacing: 0.02em
+  material-symbols:
+    fontFamily: Material Symbols Outlined
+    fontSize: 24px
+    fontWeight: '400'
+    lineHeight: 32px
+    letterSpacing: 0em
 rounded:
   sm: 0.5rem
   DEFAULT: 1rem
