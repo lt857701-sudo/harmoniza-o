@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-
 <html class="scroll-smooth" lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Élan Aesthetics | Dermatologia Médica e Rejuvenescimento Sob Medida</title>
-<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<title>LUMINA | Harmonização Facial & Estética Avançada</title>
+<meta content="LUMINA — Harmonização facial e estética avançada com planejamento personalizado, naturalidade e segurança." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols Outlined -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS v3 -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Theme Configuration Verbatim -->
 <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -22,7 +17,7 @@
           "colors": {
             "tertiary-fixed-dim": "#d5c4b4",
             "inverse-on-surface": "#f2f0ed",
-            "background": "#fbf9f6",
+            "background": "#F7F4F0",
             "on-primary-fixed": "#1c1b1b",
             "inverse-surface": "#30312f",
             "on-tertiary-fixed-variant": "#504539",
@@ -45,7 +40,7 @@
             "on-primary": "#ffffff",
             "secondary-container": "#fedeb2",
             "tertiary-container": "#231a10",
-            "secondary": "#725b38",
+            "secondary": "#7B5F3C",
             "primary-fixed-dim": "#c8c6c5",
             "on-tertiary-fixed": "#231a10",
             "on-secondary": "#ffffff",
@@ -55,7 +50,7 @@
             "surface-container-highest": "#e4e2df",
             "error": "#ba1a1a",
             "on-surface": "#1b1c1a",
-            "primary": "#000000",
+            "primary": "#1A1A1A",
             "on-secondary-fixed-variant": "#584323",
             "surface-container-high": "#eae8e5",
             "surface-container-lowest": "#ffffff",
@@ -66,13 +61,22 @@
             "primary-fixed": "#e5e2e1",
             "surface-tint": "#5f5e5e",
             "outline": "#747878",
-            "surface-container": "#efeeeb"
+            "surface-container": "#efeeeb",
+            "accent-gold": "#C8A97E",
+            "accent-gold-dark": "#A5825D",
+            "text-muted": "#666666"
           },
           "borderRadius": {
             "DEFAULT": "1rem",
             "lg": "2rem",
             "xl": "3rem",
+            "card": "16px",
             "full": "9999px"
+          },
+          "boxShadow": {
+            "soft": "0 8px 32px -4px rgba(45, 35, 25, 0.04), 0 2px 8px -2px rgba(45, 35, 25, 0.02)",
+            "card": "0 16px 40px -12px rgba(45, 35, 25, 0.12), 0 4px 12px -6px rgba(45, 35, 25, 0.06)",
+            "floating": "0 20px 48px -8px rgba(26, 26, 26, 0.18), 0 4px 16px -2px rgba(26, 26, 26, 0.08)"
           },
           "spacing": {
             "gutter": "1.5rem",
@@ -138,663 +142,346 @@
 </style>
 </head>
 <body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
-<!-- ========================================================= -->
-<!-- SHARED COMPONENT: TopNavBar                              -->
-<!-- ========================================================= -->
-<header class="sticky top-0 z-50 w-full bg-surface/85 backdrop-blur-md dark:bg-inverse-surface/85 shadow-sm dark:shadow-none">
-<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-<!-- Brand Logo -->
-<a class="flex items-center gap-3" href="#">
-<span class="w-8 h-8 rounded-full border border-secondary/40 flex items-center justify-center bg-surface-container-low text-primary">
-<span class="material-symbols-outlined text-base" aria-hidden="true">spa</span>
-</span>
-<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary tracking-tight font-normal">
-          Élan Aesthetics
-        </span>
+<header class="sticky top-0 z-50 w-full bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between gap-5">
+<a class="flex flex-col shrink-0" href="#inicio" aria-label="LUMINA — Harmonização Facial — início">
+<span class="font-headline-sm text-headline-sm text-primary tracking-[0.08em] leading-none">LUMINA</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-[0.16em] mt-1">HARMONIZAÇÃO FACIAL</span>
 </a>
-<!-- Desktop Navigation Links (Treatments is active destination) -->
-<nav class="hidden md:flex items-center space-x-8">
-<a class="text-primary dark:text-inverse-primary font-semibold border-b border-secondary pb-1 font-label-md text-label-md transition-all duration-300 ease-out active:scale-95" href="#treatments">Tratamentos</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary font-medium pb-1 font-label-md text-label-md transition-all duration-300 ease-out active:scale-95" href="#transformations">Transformações</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary font-medium pb-1 font-label-md text-label-md transition-all duration-300 ease-out active:scale-95" href="#philosophy">Nossa Filosofia</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary font-medium pb-1 font-label-md text-label-md transition-all duration-300 ease-out active:scale-95" href="#clinics">Unidades</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary font-medium pb-1 font-label-md text-label-md transition-all duration-300 ease-out active:scale-95" href="#contact">Contato</a>
+<nav class="hidden xl:flex items-center gap-5" aria-label="Navegação principal">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#procedimentos">Procedimentos</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#especialistas">Especialistas</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#clinica">A Clínica</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#valores">Tabela de Valores</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#oferta">Condições Especiais</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contato">Contato</a>
 </nav>
-<!-- Trailing Action Cluster -->
-<div class="flex items-center space-x-4">
-<button aria-label="Buscar tratamentos" class="p-2 text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200">
-<span class="material-symbols-outlined text-xl" aria-hidden="true">search</span>
-</button>
-<a class="hidden sm:inline-flex items-center font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 px-3 py-2" href="#portal">
-          Área do Paciente
-        </a>
-<a class="inline-flex items-center gap-2 bg-primary-container text-surface hover:bg-neutral-800 transition-all duration-300 ease-out active:scale-95 px-5 py-2.5 rounded-full font-label-md text-label-md shadow-sm" href="#consultation">
-<span class="material-symbols-outlined text-lg" aria-hidden="true">calendar_month</span>
-<span>Agendar Consulta</span>
-</a>
+<div class="hidden 2xl:block text-right mr-2">
+<a class="block font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="https://wa.me/5511999998888">+55 (11) 99999-8888</a>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Segunda a Sábado: 09h às 20h</span>
 </div>
+<a class="inline-flex items-center gap-2 bg-accent-gold text-primary hover:bg-accent-gold-dark transition-all duration-300 active:scale-95 px-5 py-2.5 rounded-full font-label-md text-label-md shadow-sm shrink-0" href="#oferta" aria-label="Agendar consulta">
+<span class="material-symbols-outlined text-lg" aria-hidden="true">calendar_month</span>
+<span class="hidden sm:inline">Agendar Consulta</span>
+</a>
+<details class="xl:hidden relative">
+<summary class="list-none w-11 h-11 rounded-full border border-outline-variant/50 flex items-center justify-center cursor-pointer" aria-label="Abrir menu">
+<span class="material-symbols-outlined" aria-hidden="true">menu</span>
+</summary>
+<nav class="absolute right-0 top-14 w-64 bg-surface rounded-xl border border-outline-variant/30 shadow-xl p-4 flex flex-col gap-1" aria-label="Navegação móvel">
+<a class="px-3 py-2 rounded-lg hover:bg-surface-container-low" href="#procedimentos">Procedimentos</a>
+<a class="px-3 py-2 rounded-lg hover:bg-surface-container-low" href="#especialistas">Especialistas</a>
+<a class="px-3 py-2 rounded-lg hover:bg-surface-container-low" href="#clinica">A Clínica</a>
+<a class="px-3 py-2 rounded-lg hover:bg-surface-container-low" href="#valores">Tabela de Valores</a>
+<a class="px-3 py-2 rounded-lg hover:bg-surface-container-low" href="#oferta">Condições Especiais</a>
+<a class="px-3 py-2 rounded-lg hover:bg-surface-container-low" href="#contato">Contato</a>
+</nav>
+</details>
 </div>
 </header>
-<!-- ========================================================= -->
-<!-- MAIN EDITORIAL CONTENT CONTAINER                         -->
-<!-- ========================================================= -->
 <main class="flex-grow">
-<!-- SECTION 1: EDITORIAL HERO SECTION (Matching Image 1 & 2 Aesthetic) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16">
-<!-- Top Architectural Image Hero Tile (From Image 1) -->
-<div class="relative w-full overflow-hidden shadow-sm flex flex-col lg:flex-row">
-<!-- Image: mobile = full width on top; desktop = left column -->
-<div class="w-full lg:w-1/2 h-[400px] sm:h-[480px] lg:h-auto shrink-0">
-<img class="w-full h-full object-cover object-position-center" data-alt="Interior de clínica de estética premium, minimalista e ensolarada, com superfícies de calcário polido, janelas de vidro do chão ao teto, acentos de carvalho claro, plantas tropicais bem cuidadas e móveis de designer elegantes. Iluminação ambiente suave da manhã cria uma atmosfera serena em tons neutros de creme e marfim." alt="Interior de clínica de estética premium, minimalista e ensolarada, com superfícies de calcário polido, janelas de vidro do chão ao teto, acentos de carvalho claro, plantas tropicais bem cuidadas e móveis de designer elegantes." src="assets/images/hero.png"/>
+<section id="inicio" class="hero-section relative isolate w-full overflow-hidden bg-primary">
+      <img class="hero-background absolute inset-0 w-full h-full object-cover" alt="Modelo durante procedimento labial de harmonização facial, realizado por profissional com luvas em ambiente clínico premium." src="assets/images/hero%20do%20site.png"/>
+      <div class="hero-content relative z-[2] min-h-[640px] sm:min-h-[680px] lg:min-h-[720px] px-6 sm:px-10 lg:pl-[7.5vw] lg:pr-[44vw] py-16 sm:py-20 lg:py-24 flex flex-col justify-center">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-text">HARMONIZAÇÃO FACIAL</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line hero-title-line-champagne">A ESTÉTICA DA</span>
+          <span class="hero-title-line hero-title-line-ivory">SUA MELHOR</span>
+          <span class="hero-title-line hero-title-line-ivory">VERSÃO</span>
+        </h1>
+        <p class="hero-description">
+          Harmonização facial de alta precisão para realçar sua beleza natural com segurança, simetria e elegância.
+        </p>
+        <div class="hero-actions flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <a class="hero-primary-action bg-accent-gold hover:bg-accent-gold-dark transition-all duration-300 active:scale-[1.02] px-7 py-3.5 rounded-lg font-label-md text-label-md inline-flex items-center justify-center gap-2" href="#oferta">
+            Agendar Avaliação
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+<section class="bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+<article class="bg-surface-container-lowest rounded-card p-6 lg:p-7 flex items-start gap-4 shadow-soft transition-transform duration-300 hover:-translate-y-1.5">
+<span class="w-11 h-11 rounded-full bg-accent-gold/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" aria-hidden="true">diamond</span>
+</span>
+<div>
+<h2 class="font-title-md text-title-md text-primary mb-2">Especialistas Biomédicos & Médicos</h2>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Profissionais altamente qualificados em anatomia e harmonização avançada.</p>
 </div>
-<!-- Text: mobile = stacked below image; desktop = right column -->
-<div class="w-full lg:w-1/2 p-6 sm:p-10 lg:p-14 flex flex-col justify-center text-surface max-w-2xl mx-auto lg:mx-0">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface/20 backdrop-blur-md border border-surface/30 mb-4">
-<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-surface">Precisão Médica Sob Medida</span>
+</article>
+<article class="bg-surface-container-lowest rounded-card p-6 lg:p-7 flex items-start gap-4 shadow-soft transition-transform duration-300 hover:-translate-y-1.5">
+<span class="w-11 h-11 rounded-full bg-accent-gold/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" aria-hidden="true">verified_user</span>
+</span>
+<div>
+<h2 class="font-title-md text-title-md text-primary mb-2">Produtos Certificados pela ANVISA</h2>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Ácido hialurônico e bioestimuladores de linhas e marcas premium mundiais.</p>
 </div>
-<h1 class="font-headline-lg text-headline-lg sm:font-display-hero sm:text-display-hero text-surface leading-tight mb-4">
-            Élan Aesthetics
-          </h1>
-<p class="font-body-md text-body-md text-surface/90 max-w-xl font-light">
-            Na Élan Aesthetics, tratamentos de beleza e laser são elevados a uma arte refinada. Guiados por dermatologistas certificados, curamos aprimoramentos sutis e naturais, adaptados à arquitetura facial de cada pessoa.
-          </p>
+</article>
+<article class="bg-surface-container-lowest rounded-card p-6 lg:p-7 flex items-start gap-4 shadow-soft transition-transform duration-300 hover:-translate-y-1.5">
+<span class="w-11 h-11 rounded-full bg-accent-gold/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" aria-hidden="true">face_retouching_natural</span>
+</span>
+<div>
+<h2 class="font-title-md text-title-md text-primary mb-2">Planejamento Facial Individualizado</h2>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Mapeamento dos pontos anatômicos para resultados naturais sem exageros.</p>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-card p-6 lg:p-7 flex items-start gap-4 shadow-soft transition-transform duration-300 hover:-translate-y-1.5">
+<span class="w-11 h-11 rounded-full bg-accent-gold/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" aria-hidden="true">chair</span>
+</span>
+<div>
+<h2 class="font-title-md text-title-md text-primary mb-2">Suíte de Atendimento Privativa</h2>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Ambiente exclusivo, confortável e focado na sua total privacidade.</p>
+</div>
+</article>
 </div>
 </div>
-<!-- Hero Sub-Grid: AI Skin Analysis & Clinical Diagnostic Banner (Inspired by Image 2) -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-<!-- Left: Diagnostic Editorial Interactive Skin Focus -->
-<div class="lg:col-span-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 sm:p-10 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
-<div class="flex-1 z-10">
-<div class="flex items-center gap-2 mb-3">
-<div class="flex -space-x-2">
-<span class="w-7 h-7 rounded-full bg-surface-container-high border-2 border-surface flex items-center justify-center text-[11px] font-bold text-secondary">ÉA</span>
-<span class="w-7 h-7 rounded-full bg-secondary-fixed border-2 border-surface flex items-center justify-center text-[11px] font-bold text-on-secondary-fixed">MD</span>
-<span class="w-7 h-7 rounded-full bg-surface-variant border-2 border-surface flex items-center justify-center text-[11px] font-bold text-on-surface">★</span>
-</div>
-<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Confiança de mais de 14.000 clientes exigentes</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-3">
-              Desbloqueie o verdadeiro potencial da sua pele
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-md">
-              Nosso mapeamento dérmico avançado analisa seus contornos faciais e micro-texturas para recomendar terapias de precisão adaptadas à sua harmonia anatômica única.
-            </p>
-<div class="flex flex-wrap items-center gap-3">
-<a class="bg-primary-container text-surface hover:bg-neutral-800 transition-all duration-300 px-6 py-3 rounded-full font-label-md text-label-md inline-flex items-center gap-2" href="#consultation">
-<span>Analisar Perfil de Pele</span>
+</section>
+<section id="procedimentos" class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-10">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+Procedimentos de Harmonização Facial
+</h2>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="#valores">
+Ver Todos os Tratamentos
 <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
 </a>
-<a class="border border-outline-variant/60 text-primary hover:bg-surface-container-low transition-colors duration-200 px-6 py-3 rounded-full font-label-md text-label-md" href="#treatments">
-                Explorar Protocolo
-              </a>
 </div>
+<div id="valores" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<article class="procedure-card group bg-surface-container-lowest rounded-card overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card">
+<div class="h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Lábios simétricos e hidratados em close-up editorial." loading="lazy" src="assets/images/Card%201%20Preenchimento%20Labial.png"/>
 </div>
-<!-- Diagnostic Micro-Portrait with Hairline Inspection Brackets -->
-<div class="w-full md:w-64 h-64 relative rounded-DEFAULT overflow-hidden border border-outline-variant/40 flex-shrink-0">
-<img class="w-full h-full object-cover" data-alt="Close-up macro beauty portrait of a woman with dewy, luminous skin, subtle freckles, and natural facial contours. Soft high-key medical clinic lighting accentuates refined skin texture and radiant hydration. Clean, minimalist warm ivory aesthetic with pure organic clarity." alt="Retrato macro de uma mulher com pele radiante, úmida, sardas sutis e contornos faciais naturais." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjDU1fqSzKpYzkeDh323HH5g5XQ5tvusBYdhOf39EvNksbdlAUQ_QAuf5ZVcd-iF-kpVs6tanQRqZ9QDXzpPTn_1NMmjWrzRWNGzodLGqtd66nfiWhYj4xuugUWKP9KMLMUWx_fuupvQNgJUHJ77t4f0bl9sY9LBbtUsHCua7DNWpOILpf5aOQaxMNNorPR4c8xVH5gQhqE-LNBmmCLYMqatxMis9968VH_S5UCqewMcPqK5nYnQzUyg"/>
-<!-- Inspection Markers (from Design System) -->
-<div class="absolute top-8 right-6 border border-surface/90 bg-primary/40 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] text-surface font-label-uppercase tracking-wider shadow">
-              [ Contour / Tone ]
-            </div>
-<div class="absolute bottom-10 left-6 border border-surface/90 bg-primary/40 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] text-surface font-label-uppercase tracking-wider shadow">
-              [ Dermal Elasticity ]
-            </div>
-</div>
-</div>
-<!-- Right: 3-Tier Metric Pillar (from Reference Image 2) -->
-<div class="lg:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-lg p-6 sm:p-8 flex flex-col justify-between">
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-6">EXCELÊNCIA CLÍNICA</span>
-<div class="space-y-6">
-<div class="flex items-start gap-4 pb-4 border-b border-outline-variant/20">
-<span class="material-symbols-outlined text-secondary text-2xl mt-1" aria-hidden="true">vital_signs</span>
-<div>
-<div class="font-headline-sm text-headline-sm text-primary font-semibold">98.4%</div>
-<div class="font-body-sm text-body-sm text-on-surface-variant">Satisfação com análise de pele precisa e diagnóstico de precisão</div>
-</div>
-</div>
-<div class="flex items-start gap-4 pb-4 border-b border-outline-variant/20">
-<span class="material-symbols-outlined text-secondary text-2xl mt-1" aria-hidden="true">all_inclusive</span>
-<div>
-<div class="font-headline-sm text-headline-sm text-primary font-semibold">30+</div>
-<div class="font-body-sm text-body-sm text-on-surface-variant">Terapias clínicas e a laser não cirúrgicas sob medida</div>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary text-2xl mt-1" aria-hidden="true">verified</span>
-<div>
-<div class="font-headline-sm text-headline-sm text-primary font-semibold">15+ Anos</div>
-<div class="font-body-sm text-body-sm text-on-surface-variant">Liderado por diretores médicos estéticos certificados</div>
-</div>
-</div>
-</div>
-</div>
-<div class="pt-6">
-<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-semibold">
-<span class="material-symbols-outlined text-base" aria-hidden="true">check_circle</span>
-              Registrada CQC e Tecnologias Aprovadas pela FDA
-            </span>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 2: BENTO OVERVIEW (Matching Image 1: "An Overview" + "Our Offerings") -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-8">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<!-- Dark Obsidian Stat Card (Image 1 Left Card) -->
-<div class="md:col-span-4 bg-primary-container text-surface rounded-lg p-8 sm:p-10 flex flex-col justify-between shadow-md">
-<div>
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-on-primary-container block mb-8">
-              VISÃO GERAL
-            </span>
-<div class="grid grid-cols-2 gap-4">
-<div>
-<div class="font-display-hero-mobile text-display-hero-mobile font-light text-surface">30</div>
-<div class="font-label-uppercase text-label-uppercase text-on-primary-container mt-1">CLÍNICAS<br/>EM TODO O PAÍS</div>
-</div>
-<div>
-<div class="font-display-hero-mobile text-display-hero-mobile font-light text-surface">15+</div>
-<div class="font-label-uppercase text-label-uppercase text-on-primary-container mt-1">ANOS<br/>DE EXPERIÊNCIA</div>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-surface/10 mt-8">
-<p class="font-body-sm text-body-sm text-surface-variant">
-              Oferecendo maestria clínica de alto toque nos principais endereços metropolitanos.
-            </p>
-</div>
-</div>
-<!-- Off-White Offerings Statement Card (Image 1 Right Card) -->
-<div class="md:col-span-8 bg-surface-container-high/60 border border-outline-variant/30 rounded-lg p-8 sm:p-12 flex flex-col justify-center">
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary block mb-3">NOSSAS CAPACIDADES</span>
-<h2 class="font-headline-md text-headline-md text-primary mb-4 tracking-tight">
-            NOSSAS OFERTAS
-          </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mb-6">
-            Na Élan Aesthetics, oferecemos uma seleção exclusiva de tratamentos de beleza e laser de ponta, projetados para realçar, restaurar e refinar. Cada tratamento é meticulosamente adaptado ao seu perfil de pele, garantindo resultados ótimos com um toque luxuoso e personalizado.
-          </p>
-<div class="flex items-center gap-6">
-<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Protocolos de Cuidado Individualizados
-            </span>
-<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Apenas Médicos Administram
-            </span>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 3: FEATURED AWARD-WINNING HERO TREATMENT (Matching Image 1) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10" id="treatments">
-<div class="mb-6 flex items-end justify-between">
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-2">PROTOCOLO DE PRECISÃO</span>
-<h2 class="font-headline-md text-headline-md text-primary">
-            NOSSOS TRATAMENTOS PREMIADOS
-          </h2>
-</div>
-<a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#all-treatments">
-<span>Ver Todos os 24 Protocolos</span>
-<span class="material-symbols-outlined text-base" aria-hidden="true">chevron_right</span>
+<div class="p-6 flex flex-col min-h-[280px]">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Preenchimento Labial & Hidratação</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-6">Escultura e volume labial sob medida, definindo o contorno e devolvendo a hidratação natural.</p>
+<div class="mt-auto flex items-center justify-between gap-4">
+<span class="font-label-md text-label-md text-primary">A partir de R$ 1.200</span>
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center hover:bg-accent-gold hover:text-primary hover:border-accent-gold transition-colors" href="#oferta" aria-label="Agendar avaliação para preenchimento labial">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
 </a>
 </div>
-<!-- Full-Width High-Aspect Ratio Feature Card -->
-<div class="relative w-full h-[440px] sm:h-[500px] rounded-lg overflow-hidden border border-outline-variant/30 group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Detailed medical aesthetic procedure where a clinician wearing white medical gloves gently administers an ultra-fine precision needle treatment to a woman's calm, peaceful face. Soft studio lighting highlighting pristine skin textures, closed eyes, and serene atmosphere in warm champagne tones." alt="Procedimento antirrugas: clínico aplica agulha de precisão no rosto sereno de uma paciente." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoFzo3s1iEOy7SgJBQWis8SAgV4n_fQrBdwIpnFVG0-rjl5UxKnKv16fggy0WJFHydt-9xi_Qp-QrwjgdZvs78XanxnrkdAZjM1vBs5u9K6ppdyDBeAk3aJf73pLS_fgURCYSDt7KqB1uPh35DhBaxS6TbDpHyki6E-HCPggNhHcNo1Id5nrhh04_ve5_TBpgSUGRQt_b91qL3XPgYIRQa9iqdarnDgnxAlPS8YNID64wBdX6jh1ReXQ"/>
-<!-- Editorial Vignette Overlay -->
-<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/40 to-transparent flex flex-col justify-end p-8 sm:p-14 text-surface text-center items-center">
-<div class="max-w-2xl mx-auto">
-<span class="inline-block px-3 py-1 rounded-full bg-surface/20 backdrop-blur-md border border-surface/30 font-label-uppercase text-label-uppercase tracking-widest text-surface mb-3">
-              PREMIADO
-            </span>
-<h3 class="font-headline-lg text-headline-lg sm:font-display-hero-mobile sm:text-display-hero-mobile text-surface mb-3">
-              TRATAMENTOS ANTIRRUGAS
-            </h3>
-<p class="font-body-md text-body-md text-surface/90 font-light max-w-xl mx-auto mb-6">
-              Usando injetáveis avançados, suavizamos linhas finas e prevenimos a formação de rugas mais profundas, preservando sua expressão facial natural. Cada tratamento é adaptado para realçar seus traços únicos, entregando uma aparência revigorada, descansada e sem esforço elegante.
-            </p>
-<div class="inline-flex items-center gap-4">
-<a class="bg-surface text-primary hover:bg-surface-container-high transition-colors duration-200 px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm" href="#consultation">
-                Avaliação com Agendamento
-              </a>
-<a class="text-surface font-label-md text-label-md underline underline-offset-8 hover:text-secondary-fixed transition-colors" href="#learn-more">
-                Ler Estudo Clínico
-              </a>
+</div>
+</article>
+<article class="procedure-card group bg-surface-container-lowest rounded-card overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card">
+<div class="h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Perfil lateral com mandíbula definida e queixo equilibrado." loading="lazy" src="assets/images/Card%202%20Contorno%20de%20Mand%C3%ADbula%20e%20Mente.png"/>
+</div>
+<div class="p-6 flex flex-col min-h-[280px]">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Contorno de Mandíbula e Queixo</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-6">Definição do terço inferior do rosto, destacando o perfil e criando transições anatômicas marcantes.</p>
+<div class="mt-auto flex items-center justify-between gap-4">
+<span class="font-label-md text-label-md text-primary">A partir de R$ 1.800</span>
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center hover:bg-accent-gold hover:text-primary hover:border-accent-gold transition-colors" href="#oferta" aria-label="Agendar avaliação para contorno de mandíbula">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+</a>
 </div>
 </div>
+</article>
+<article class="procedure-card group bg-surface-container-lowest rounded-card overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card">
+<div class="h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Close-up do terço médio do rosto com nariz reto e região dos olhos descansada." loading="lazy" src="assets/images/Card%203%20Rinomodela%C3%A7%C3%A3o%20%20Preenchimento%20de%20Olheiras.png"/>
+</div>
+<div class="p-6 flex flex-col min-h-[280px]">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Rinomodelação & Preenchimento de Olheiras</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-6">Correção de imperfeições no dorso nasal e atenuação do aspecto de cansaço na região dos olhos.</p>
+<div class="mt-auto flex items-center justify-between gap-4">
+<span class="font-label-md text-label-md text-primary">A partir de R$ 1.500</span>
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center hover:bg-accent-gold hover:text-primary hover:border-accent-gold transition-colors" href="#oferta" aria-label="Agendar avaliação para rinomodelação">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="procedure-card group bg-surface-container-lowest rounded-card overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card">
+<div class="h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Detalhe de testa lisa, maçãs do rosto erguidas e pele firme e radiante." loading="lazy" src="assets/images/Card%204%20Toxina%20Botul%C3%ADnica%20%20Bioestimuladores%20de%20Col%C3%A1geno.png"/>
+</div>
+<div class="p-6 flex flex-col min-h-[280px]">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Toxina Botulínica & Bioestimuladores</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-6">Prevenção de rugas dinâmicas e estímulo intenso de colágeno para firmeza e efeito lifting duradouro.</p>
+<div class="mt-auto flex items-center justify-between gap-4">
+<span class="font-label-md text-label-md text-primary">A partir de R$ 990</span>
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center hover:bg-accent-gold hover:text-primary hover:border-accent-gold transition-colors" href="#oferta" aria-label="Agendar avaliação para toxina botulínica">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section id="clinica" class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+<div class="lg:col-span-5 overflow-hidden rounded-card">
+<img class="w-full h-full min-h-[440px] object-cover" alt="Sala de procedimentos da LUMINA com poltrona médica, mármore e iluminação embutida." loading="lazy" src="assets/images/Imagem%20da%20Cl%C3%ADnica%20%20Sala%20de%20Atendimento%20de%20Luxo.png"/>
+</div>
+<div id="especialistas" class="lg:col-span-4 flex flex-col justify-center py-4 lg:px-2">
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-6">
+Sobre a LUMINA
+</h2>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed mb-8">
+A Lumina é referência em harmonização facial e procedimentos injetáveis de alta performance. Combinamos o que há de mais avançado em tecnologia médica ao olhar artístico focado na valorização dos seus traços únicos.
+</p>
+<ul class="space-y-5">
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-accent-gold/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">check</span>
+</span>
+<span class="font-body-sm text-body-sm text-primary">Biossegurança e ambiente hospitalar privativo</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-accent-gold/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">check</span>
+</span>
+<span class="font-body-sm text-body-sm text-primary">Protocolos exclusivos de aplicação indolora</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-accent-gold/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm" aria-hidden="true">check</span>
+</span>
+<span class="font-body-sm text-body-sm text-primary">Acompanhamento e pós-procedimento personalizado</span>
+</li>
+</ul>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-4">
+<article class="bg-surface-container-low rounded-card p-6 flex-1 flex flex-col justify-center">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary leading-none mb-3">8+</span>
+<p class="font-body-sm text-body-sm text-text-muted">Anos de excelência em harmonização.</p>
+</article>
+<article class="bg-surface-container-low rounded-card p-6 flex-1 flex flex-col justify-center">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary leading-none mb-3">12.000+</span>
+<p class="font-body-sm text-body-sm text-text-muted">Rostos harmonizados com sucesso.</p>
+</article>
+<article class="bg-surface-container-low rounded-card p-6 flex-1 flex flex-col justify-center">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary leading-none mb-3">100%</span>
+<p class="font-body-sm text-body-sm text-text-muted">Produtos de alta pureza aprovados pela ANVISA.</p>
+</article>
 </div>
 </div>
 </section>
-<!-- SECTION 4: POPULAR SERVICES TRIO GRID (Directly from Image 1) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10">
-<div class="mb-6">
-<h2 class="font-headline-md text-headline-md text-primary">
-          NOSSOS SERVIÇOS POPULARES
-        </h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Service 1: FILLER -->
-<div class="group relative w-full h-[380px] rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col justify-end p-6 bg-surface-container-low shadow-sm">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Macro medical aesthetic detail of lip augmentation and cheek contouring procedure. A specialist in sterile surgical gloves carefully applies an micro-droplet dermal filler to the upper lip of a peaceful female patient with flawless dewy skin. Warm clinical setting with soft natural highlights." alt="Preenchimento dérmico: aplicação de ácido hialurônico nos lábios e bochechas." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCvRHonOBeajg2BFKhav96JEoyBZWaXW7dSfgY0HAanqinWccK8QCIJfy-hNei24S0yiqPUpK4I3ZChhP8lyeaL9GQKS5ifu24nkjQIuga4fctJl7XvBuNsHpGyy1JFIBQq0Tl-usB2DiKZR7lAc9-PRlPeHDSDIgtzzLdjT4PBe0_QuhpH7qJBnrDjnP3Q6xJcoGp_CrNAi04kKdDZirs5vAew2hB-z-re3JpkQriY49zXRbZx0WJzA"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
-<div class="relative z-10 text-surface">
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary-fixed block mb-1">ESCULTURA DÉRMICA</span>
-<h3 class="font-headline-sm text-headline-sm text-surface tracking-wider font-semibold">
-              FILLER
-            </h3>
-<p class="font-body-sm text-body-sm text-surface/80 mt-1 line-clamp-2">
-              Formulações de ácido hialurônico projetadas para volume labial, restauração de bochechas e definição da linha da mandíbula.
-            </p>
-</div>
-</div>
-<!-- Service 2: BOTOX -->
-<div class="group relative w-full h-[380px] rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col justify-end p-6 bg-surface-container-low shadow-sm">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dermatologist in medical mask and white protective gloves gently performing precise forehead micro-botox injection on a relaxed female patient resting on a plush clinical treatment bed. Clean modern aesthetic clinic background with airy warm lighting." alt="Botox: dermatologista aplica microinjeção na testa de uma paciente relaxada." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYCUScI0lHqf9w4ajU2scAy4unnfHR-876mfebOFmq1i9Pbkigns3ccRUircyGE9rGOg8I3wlNZ-UOBvuPBwgdsUkySzo4U3oLVquXTeB8h0VBL_jZU-iOlsXTq6N0Fv6vGnyXlGcjqCJbJEcWgDtcOqOxvS-XkQKhvC0m7YpYfWsC-icyZhPJXuvbubufWmI7eIeXg7dtnsq-NqYLnMLnRg19zYApNjkpwIQ1-M_K0YpYscBxmBud-w"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
-<div class="relative z-10 text-surface">
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary-fixed block mb-1">NEUROMODULADOR</span>
-<h3 class="font-headline-sm text-headline-sm text-surface tracking-wider font-semibold">
-              BOTOX
-            </h3>
-<p class="font-body-sm text-body-sm text-surface/80 mt-1 line-clamp-2">
-              Prevenção sutil de rugas dinâmicas direcionada a pés de galinha, glabela e linhas de tensão na testa.
-            </p>
-</div>
-</div>
-<!-- Service 3: BROW LIFT -->
-<div class="group relative w-full h-[380px] rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col justify-end p-6 bg-surface-container-low shadow-sm">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Clinical beauty treatment for non-surgical brow lift and upper face rejuvenation. A certified doctor in sterile gloves assesses brow symmetry and fine vectors on a serene patient with eyes closed in an ultra-clean, luxurious medical spa." alt="Lifting de sobrancelha: médico avalia simetria das sobrancelhas em paciente serena." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzDs4NTf0W1sCaEm9uWplt_YIhtD4GKgGK3wmBSHGchkEBiyeJGGjqpCoRxMHbPH-0Bz-82pCbOLaT0t5RFYuV1xe2hkv66qmkK-q9p9Npce57hytzAkZ5P3Huf0okITDkGnKHe687TlYqGsy0f7rtAZg16Ee0mP5oH8AG-U1ZLC476Fw5lKLcdGyiJHovtd-4yx4nxelASSOH0y0z-yJLMJelxrKUfB7z2jaqPtJVZJy27412sdEq8w"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
-<div class="relative z-10 text-surface">
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary-fixed block mb-1">HARMONIA VETORIAL</span>
-<h3 class="font-headline-sm text-headline-sm text-surface tracking-wider font-semibold">
-              LIFTING DE SOBRANCELHA
-            </h3>
-<p class="font-body-sm text-body-sm text-surface/80 mt-1 line-clamp-2">
-              Elevação não cirúrgica do arco para iluminar pálpebras caídas e restaurar vitalidade jovem e alerta.
-            </p>
-</div>
-</div>
+<section id="jornada" class="bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center tracking-tight max-w-3xl mx-auto mb-14">
+Abordagem Exclusiva para a Sua Harmonização
+</h2>
+<ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
+<li class="relative pt-8 before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-accent-gold/50">
+<span class="absolute top-[-5px] left-0 w-2.5 h-2.5 rounded-full bg-accent-gold ring-4 ring-surface-container-low"></span>
+<span class="font-label-uppercase text-label-uppercase text-secondary block mb-3">Passo 01</span>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Análise Facial 3D</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Avaliamos as proporções do seu rosto e identificamos os pontos de luz e sombra.</p>
+</li>
+<li class="relative pt-8 before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-accent-gold/50">
+<span class="absolute top-[-5px] left-0 w-2.5 h-2.5 rounded-full bg-accent-gold ring-4 ring-surface-container-low"></span>
+<span class="font-label-uppercase text-label-uppercase text-secondary block mb-3">Passo 02</span>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Plano de Tratamento Customizado</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Definimos as quantidades exatas e os produtos ideais para o seu objetivo.</p>
+</li>
+<li class="relative pt-8 before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-accent-gold/50">
+<span class="absolute top-[-5px] left-0 w-2.5 h-2.5 rounded-full bg-accent-gold ring-4 ring-surface-container-low"></span>
+<span class="font-label-uppercase text-label-uppercase text-secondary block mb-3">Passo 03</span>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Aplicação de Alta Precisão</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Procedimento realizado com anestesia local e microcânulas para maior conforto e segurança.</p>
+</li>
+<li class="relative pt-8 before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-accent-gold/50">
+<span class="absolute top-[-5px] left-0 w-2.5 h-2.5 rounded-full bg-accent-gold ring-4 ring-surface-container-low"></span>
+<span class="font-label-uppercase text-label-uppercase text-secondary block mb-3">Passo 04</span>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Acompanhamento & Retoque</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Avaliação do resultado final e orientações para máxima durabilidade do procedimento.</p>
+</li>
+</ol>
 </div>
 </section>
-<!-- SECTION 5: PHILOSOPHY & ABOUT SPLIT BENTO (Directly from Image 1 Lower Half) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12" id="philosophy">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-<!-- Left Side: 2 White Editorial Cards + 1 Laser Photo Card (from Image 1) -->
-<div class="lg:col-span-7 flex flex-col gap-6 justify-between">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<!-- Card A: Personalized Services -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 sm:p-8">
-<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-2">PROTOCOLOS SOB MEDIDA</span>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-3">
-                SERVIÇOS PERSONALIZADOS
-              </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Nossa missão na Élan Aesthetics é proporcionar a cada cliente tratamentos de pele sob medida que realcem sua beleza natural. Entendemos que cada indivíduo é único, e assim são suas necessidades de cuidados com a pele. Se você busca tonificação corporal e facial, fio facial ou serviços de coloração, nossa equipe de especialistas está dedicada a entregar resultados excepcionais.
-              </p>
+<section id="oferta" class="px-0 w-full" style="height:425px;display:flex;flex-direction:row;width:100%;overflow:hidden;align-items:stretch;">
+<div class="p-6 sm:p-8 lg:p-10 flex flex-col justify-center items-start text-left lg:flex-none lg:w-[24%]">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-3 max-w-none leading-tight" style="font-size:32px;line-height:1.1;">
+Receba 10% de desconto na sua Primeira Harmonização
+</h2>
+<p class="font-body-lg text-body-lg text-text-muted leading-relaxed max-w-none mb-5" style="font-size:15px;line-height:1.5;">
+Comece a transformar o seu rosto com quem entende de simetria e naturalidade. Agende sua consulta de avaliação hoje.
+</p>
+<a class="bg-accent-gold text-primary hover:bg-accent-gold-dark transition-all duration-300 active:scale-[1.02] px-4 py-2 rounded-lg font-label-md text-label-md inline-flex items-center gap-2 self-start" style="font-size:13px;" href="https://wa.me/5511999998888?text=Olá%2C%20quero%20garantir%20meu%20desconto%20exclusivo%20na%20primeira%20harmonização." target="_blank" rel="noopener noreferrer">
+Garantir Meu Desconto Exclusivo
+<span class="material-symbols-outlined text-xs" aria-hidden="true">arrow_forward</span>
+</a>
 </div>
-<!-- Card B: Skin Rejuvenation -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 sm:p-8">
-<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-2">CUIDADO CELULAR CLÍNICO</span>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-3">
-                REJUVENESCIMENTO DA PELE
-              </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Levando os cuidados com a pele ao próximo nível, oferecemos uma gama abrangente de tratamentos avançados projetados para abordar diversas preocupações de pele. Nossos peeling químicos profissionais, terapia de Radiofrequência, microagulhamento, terapia LED e IPL (Luz Intensa Pulsada) são adaptados para rejuvenescer sua pele e tratar questões como pigmentação e acne.
-              </p>
-</div>
-<!-- Card C: Horizontal Laser Treatments Banner (from Image 1) -->
-<div class="relative h-64 rounded-lg overflow-hidden border border-outline-variant/30 p-6 sm:p-8 flex flex-col justify-end group">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Especialista em dermatologia realizando rejuvenescimento cutâneo a laser fracionário com ponta de dispositivo médico emitindo comprimento de onda seguro e focado na área da bochecha. Iluminação clínica médica suave, luvas estéreis, reflexos quentes dourados suaves em superfícies polidas." alt="Tratamento a laser: dermatologista realiza rejuvenescimento cutâneo fracionado na bochecha." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQAXB7o5rVvPgNomNY26n6LxNia5A3mRreXOUR6RXy596z4oyg-F_W5yZtMHqlSeKj2LZFa65tnuxRdMXpElAYID-NjrNUYvZRw41xYQcWf0UKUPV1Ip2lLLKHsQE_mlFevYX4Q_rsAQJQhP7v5MEWKVLHUiuyyMHYXPO1mSy5WPICZHcvPocpIbx1t498ualJiT0zXkcrAWdxs6YOfgr_1YIoN0VVK3-UPwDGcfFrybSGZi7hvAFh2g"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/30 to-transparent"></div>
-<div class="relative z-10 text-surface">
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary-fixed block mb-1">TECNOLOGIA AVANÇADA</span>
-<h3 class="font-headline-sm text-headline-sm text-surface font-semibold">
-                TRATAMENTOS A LASER
-              </h3>
-<p class="font-body-sm text-body-sm text-surface/90 max-w-lg mt-1">
-              Se você busca renovação cutânea fracionada, rejuvenescimento da pele ou correção direcionada para pigmentação e lesões vasculares, nossa tecnologia avançada garante uma experiência perfeita com zero tempo de inatividade clínico.
-            </p>
-</div>
-</div>
-</div>
-<!-- Right Side: Obsidian ABOUT US Card (Exact Layout from Image 1) -->
-<div class="lg:col-span-5 bg-primary-container text-surface rounded-lg p-8 sm:p-12 flex flex-col justify-between shadow-lg">
-<div>
-<span class="font-label-uppercase text-label-uppercase text-on-primary-container tracking-widest block mb-3">FUNDAÇÃO E ÉTICA</span>
-<h3 class="font-headline-md text-headline-md text-surface mb-6">
-              SOBRE NÓS
-            </h3>
-<div class="space-y-4 font-body-sm text-body-sm text-surface-variant/90 leading-relaxed">
-<p>
-                Nossa missão na Élan Aesthetics é proporcionar a cada cliente tratamentos de pele sob medida que realcem sua beleza natural. Entendemos que cada indivíduo é único, e assim são suas necessidades de cuidados com a pele; seja você buscando depilação corporal e facial, fio facial ou serviços de coloração, nossa equipe de especialistas está dedicada a entregar resultados excepcionais.
-              </p>
-<p>
-                Levando os cuidados com a pele ao próximo nível, oferecemos uma gama abrangente de tratamentos avançados projetados para abordar diversas preocupações de pele. Nossos peeling químicos profissionais, terapia de Radiofrequência, microagulhamento, terapia LED e IPL (Luz Intensa Pulsada) são adaptados para rejuvenescer sua pele e tratar questões como pigmentação e acne.
-              </p>
-<p>
-                Na Élan Aesthetics, vamos além de apenas tratar sua pele. Priorizamos seu bem-estar geral, criando faciais avançados sob medida personalizados para atender às necessidades únicas da sua pele e corpo. Nosso objetivo é que você saia de nossa clínica não apenas com aparência fantástica, mas também se sentindo relaxado e rejuvenescido.
-              </p>
-</div>
-</div>
-<div class="pt-8 mt-6 border-t border-surface/10">
-<a class="inline-flex items-center justify-center bg-surface text-primary hover:bg-surface-container-high transition-all duration-300 px-6 py-2.5 rounded-full font-label-md text-label-md text-center" href="#philosophy">
-              SABER MAIS
-            </a>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 6: BEFORE & AFTER TRANSFORMATION SHOWCASE (Interactive Inspection) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12" id="transformations">
-<div class="text-center max-w-2xl mx-auto mb-10">
-<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-2">EFICÁCIA CLÍNICA DOCUMENTADA</span>
-<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
-          Transformações Visuais
-        </h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">
-          Resultados naturais e harmonizados que preservam a identidade pessoal. Cada resultado é documentado sob iluminação clínica polarizada cruzada padronizada.
-        </p>
-</div>
-<!-- Interactive Comparison Container -->
-<div class="p-6 sm:p-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-<!-- Image Comparison Module with Slider Logic -->
-<div class="lg:col-span-7">
-<div class="relative w-full h-[380px] sm:h-[420px] rounded-DEFAULT overflow-hidden shadow-inner border border-outline-variant/30 select-none" id="comparison-box">
-<!-- After Image (Background) -->
-<img class="absolute inset-0 w-full h-full object-cover" data-alt="Clinical after-treatment result portrait of a woman showing beautifully smoothed forehead lines, plumped midface, refined skin tone, and vibrant natural glow. Professional high-key medical clinic portrait against pure soft beige backdrop." alt="Resultado após o tratamento: pele mais lisa, midface preenchido, tom uniforme e brilho natural." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5vUNo_cq7hJcHELDsvwVf5h8tafajRwVuaHmzHXMKpwe3BCk_ihtK7HTyeoP_cGMolLv8G-5LmllxaskPLTf24p6AaiVPEIylfAih3c4MpB-GGpFlgPwiAUQSfQYVCdPVE_Qudve_5qtE7JBTOLu-KKKRLYz5jFEmZixtxYrc9UmesEv741MfTPC0vaX2HXiH5MfU82XmameiZquVDs2VNqr0ZkOrg4IaQY9p47xNuc82bgS8gf6bew"/>
-<div class="absolute top-4 right-4 bg-primary/70 backdrop-blur-md text-surface px-3 py-1 rounded-full font-label-uppercase text-label-uppercase tracking-wider">
-                Depois: 4 Semanas
-              </div>
-<!-- Before Image (Clipped Overlay) -->
-<div class="absolute inset-0 overflow-hidden" id="before-wrapper" style="width: 50%;">
-<img class="absolute inset-0 w-full h-full object-cover max-w-none" data-alt="Clinical before-treatment assessment portrait of the same woman showing natural expression lines on forehead, slight volume loss around cheekbones, and uneven skin texture under clinical photographic lighting." alt="Antes do tratamento: linhas de expressão, leve perda de volume e textura irregular da pele." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu4321yJrfk03KRHEtV2SRHU_EE5ttsH4fzLKemAKiQEnuuVSvdyHyCUDVHa77EbRrvD-BYecKaAYQW6PQcvVX5Ui4inpbQ6MpvmF8bEnCmgZ6nm5tJKByW_tACStL0ms5eFTMDdvWZxZd3I03lq51YFxWWjNZ41hQLALNsQmnD39N-JTcF473fR7SbeRgaBcRUgIdrFHa0jEiYKpMa7SZx9gBcNvJjnWGTT2M6Jhf81PkddUx3GD8lw" style="width: 100%; height: 100%;"/>
-<div class="absolute top-4 left-4 bg-primary/70 backdrop-blur-md text-surface px-3 py-1 rounded-full font-label-uppercase text-label-uppercase tracking-wider">
-                  Avaliação Prévia
-                </div>
-</div>
-<!-- Draggable Divider Line -->
-<div class="slider-divider" id="slider-handle" style="left: 50%;">
-<div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface shadow-lg flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-xs" aria-hidden="true">code</span>
-</div>
-</div>
-</div>
-<div class="text-center mt-3">
-<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1.5">
-<span class="material-symbols-outlined text-sm" aria-hidden="true">touch_app</span>
-                Arraste ou passe o mouse sobre a imagem para inspecionar o alisamento dérmico
-              </span>
-</div>
-</div>
-<!-- Treatment Breakdown Metadata -->
-<div class="lg:col-span-5 space-y-6">
-<div class="inline-block px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-uppercase text-label-uppercase tracking-wider">
-              PROTOCOLO #704 · HARMONIZAÇÃO COMPLETA
-            </div>
-<h3 class="font-headline-sm text-headline-sm text-primary">
-              Multi-Modal Midface Lift e Refinamento da Pele
-            </h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              A paciente apresentava leve depleção de volume nas almofadas de gordura da face lateral e linhas de expressão nas glabelas. Um plano sinérgico utilizando micro-alíquotas de Teoxane RHA junto com 3 sessões de laser Clear+Brilliant produziu um brilho revigorado e imperceptível.
-            </p>
-<div class="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary block">DURAÇÃO</span>
-<span class="font-title-md text-title-md text-primary font-medium">45 Minutos</span>
-</div>
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary block">TEMPO DE RECUPERAÇÃO</span>
-<span class="font-title-md text-title-md text-primary font-medium">0 - 24 Horas</span>
-</div>
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary block">ÁREA ALVO</span>
-<span class="font-title-md text-title-md text-primary font-medium">Midface e Sobrancelha</span>
-</div>
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary block">ESPECIALISTA</span>
-<span class="font-title-md text-title-md text-primary font-medium">Dra. Elena Vance, MD</span>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<a class="bg-primary-container text-surface hover:bg-neutral-800 transition-all duration-300 px-6 py-2.5 rounded-full font-label-md text-label-md" href="#consultation">
-                Reservar Protocolo Similar
-              </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 7: CLINICS NATIONWIDE DIRECTORY -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12" id="clinics">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
-<div>
-<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-2">SANTUÁRIOS DE EXCELÊNCIA</span>
-<h2 class="font-headline-md text-headline-md text-primary">
-            Nossas Localizações de Clínica
-          </h2>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mt-2 md:mt-0">
-          Santuários arquitetônicos projetados para acalmar seus sentidos desde o momento em que você cruza nossas portas.
-        </p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Clinic 1 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-<span class="font-label-uppercase text-label-uppercase text-secondary block mb-1">MAYFAIR, LONDRES</span>
-<h3 class="font-title-lg text-title-lg text-primary mb-2">Old Bond Street</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-            14 Old Bond Street, 2º Andar<br/>Londres W1S 4PP
-          </p>
-<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Seg - Sáb: 9h - 19h</span>
-<span class="material-symbols-outlined text-sm" aria-hidden="true">north_east</span>
-</div>
-</div>
-<!-- Clinic 2 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-<span class="font-label-uppercase text-label-uppercase text-secondary block mb-1">MANHATTAN, NY</span>
-<h3 class="font-title-lg text-title-lg text-primary mb-2">Madison Avenue</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-            680 Madison Ave, Penthouse A<br/>Nova York, NY 10065
-          </p>
-<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Seg - Sáb: 8h - 20h</span>
-<span class="material-symbols-outlined text-sm" aria-hidden="true">north_east</span>
-</div>
-</div>
-<!-- Clinic 3 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-<span class="font-label-uppercase text-label-uppercase text-secondary block mb-1">BEVERLY HILLS, CA</span>
-<h3 class="font-title-lg text-title-lg text-primary mb-2">Rodeo Drive Suite</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-            420 N Rodeo Dr, 3º Andar<br/>Beverly Hills, CA 90210
-          </p>
-<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Ter - Sáb: 9h - 18h</span>
-<span class="material-symbols-outlined text-sm" aria-hidden="true">north_east</span>
-</div>
-</div>
-<!-- Clinic 4 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-<span class="font-label-uppercase text-label-uppercase text-secondary block mb-1">PARIS, FRANÇA</span>
-<h3 class="font-title-lg text-title-lg text-primary mb-2">Place Vendôme</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-            18 Place Vendôme<br/>75001 Paris, França
-          </p>
-<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Seg - Sex: 10h - 19h</span>
-<span class="material-symbols-outlined text-sm" aria-hidden="true">north_east</span>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 8: READY TO REJUVENATE CTA / FORM (Matching Bottom Card of Image 1) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10 mb-8" id="consultation">
-<div class="bg-primary-container text-surface rounded-lg p-8 sm:p-14 shadow-xl border border-neutral-800">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-<div class="lg:col-span-6">
-<span class="font-label-uppercase text-label-uppercase text-on-primary-container tracking-widest block mb-2">INICIE SUA JORNADA</span>
-<h2 class="font-headline-lg text-headline-lg text-surface tracking-tight mb-4">
-              PRONTA PARA REJUVENESCER SUA PELE?
-            </h2>
-<p class="font-body-md text-body-md text-surface-variant font-light max-w-lg mb-6">
-              Preencha nosso formulário de consulta e um de nossos médicos ligará para você para entender suas necessidades específicas e fornecer uma lista de horários disponíveis. Oferecemos uma consulta de cortesia de 30min para todos os novos clientes.
-            </p>
-<div class="flex items-center gap-6">
-<div class="flex items-center gap-2 text-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-secondary-fixed text-lg" aria-hidden="true">medical_services</span>
-                Médicos Certificados
-              </div>
-<div class="flex items-center gap-2 text-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-secondary-fixed text-lg" aria-hidden="true">schedule</span>
-                Análise Aprofundada de 30 Minutos
-              </div>
-</div>
-</div>
-<!-- Quick Consultation Form Inputs -->
-<div class="lg:col-span-6 p-6 sm:p-8 text-on-surface">
-<form class="space-y-4" onsubmit="event.preventDefault(); alert('Solicitação de consulta registrada. Nossa equipe médica entrará em contato em breve.');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Seu Nome Completo</label>
-<input class="w-full rounded-DEFAULT border-outline-variant/60 focus:border-secondary focus:ring-0 text-body-sm font-body-sm px-4 py-2.5 bg-surface-container-low" placeholder="Elena Rostova" required="" type="text"/>
-</div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Número de Telefone</label>
-<input class="w-full rounded-DEFAULT border-outline-variant/60 focus:border-secondary focus:ring-0 text-body-sm font-body-sm px-4 py-2.5 bg-surface-container-low" placeholder="+44 20 7946 0912" required="" type="tel"/>
-</div>
-</div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Foco Principal do Tratamento</label>
-<select class="w-full rounded-DEFAULT border-outline-variant/60 focus:border-secondary focus:ring-0 text-body-sm font-body-sm px-4 py-2.5 bg-surface-container-low">
-<option>Tratamentos Antirrugas e Botox</option>
-<option>Harmonização Facial e Preenchedores Dérmicos</option>
-<option>Lifting de Sobrancelha Não Cirúrgico</option>
-<option>Rejuvenescimento a Laser Fracionado</option>
-<option>Peelings Químicos Médicos e RF</option>
-<option>Exame Diagnóstico Completo de Pele</option>
-</select>
-</div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Localização da Clínica Preferida</label>
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
-<label class="border border-outline-variant/40 rounded py-2 cursor-pointer hover:border-secondary transition-colors">
-<input checked="" class="sr-only" name="clinic_loc" type="radio"/>
-                    Londres
-                  </label>
-<label class="border border-outline-variant/40 rounded py-2 cursor-pointer hover:border-secondary transition-colors">
-<input class="sr-only" name="clinic_loc" type="radio"/>
-                    Nova York
-                  </label>
-<label class="border border-outline-variant/40 rounded py-2 cursor-pointer hover:border-secondary transition-colors">
-<input class="sr-only" name="clinic_loc" type="radio"/>
-                    Beverly Hills
-                  </label>
-<label class="border border-outline-variant/40 rounded py-2 cursor-pointer hover:border-secondary transition-colors">
-<input class="sr-only" name="clinic_loc" type="radio"/>
-                    Paris
-                  </label>
-</div>
-</div>
-<button class="w-full bg-primary-container text-surface hover:bg-neutral-800 transition-all duration-300 py-3 rounded-full font-label-md text-label-md mt-2" type="submit">
-                AGENDAR CHAMADA
-              </button>
-</form>
-</div>
-</div>
-</div>
+<div class="relative h-full overflow-hidden lg:flex-none lg:w-[76%]">
+<img class="w-full h-full object-cover object-position-center block" alt="Close editorial do olhar e terço superior com pele impecável e brilho natural." src="assets/images/Imagem%20do%20Banner%20de%20Oferta%20%20Avalia%C3%A7%C3%A3o.png"/></div>
 </section>
 </main>
-<!-- ========================================================= -->
-<!-- SHARED COMPONENT: Footer                                  -->
-<!-- ========================================================= -->
-<footer class="w-full rounded-t-xl bg-primary-container dark:bg-surface-container-lowest border-t border-outline/20 dark:border-outline-variant/10 text-on-primary-fixed dark:text-inverse-on-surface" id="contact">
-<div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 flex flex-col justify-between gap-12">
-<!-- Top Row: Brand & Links Grid -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-surface">
-<div class="md:col-span-5 space-y-4">
-<div class="font-headline-md text-headline-md text-surface dark:text-on-surface tracking-tight">
-            Élan Aesthetics
-          </div>
-<p class="font-body-sm text-body-sm text-surface-variant max-w-sm leading-relaxed">
-            O santuário para dermatologia clínica sob medida e arquitetura facial. Comprometida com inclusividade, segurança e restauração estética baseada em evidências.
-          </p>
-<div class="pt-2 flex items-center space-x-3 text-surface-variant">
-<span class="w-9 h-9 rounded-full border border-surface/20 flex items-center justify-center hover:text-secondary-fixed transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-base" aria-hidden="true">mail</span>
-</span>
-<span class="w-9 h-9 rounded-full border border-surface/20 flex items-center justify-center hover:text-secondary-fixed transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
-</span>
-<span class="w-9 h-9 rounded-full border border-surface/20 flex items-center justify-center hover:text-secondary-fixed transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-base" aria-hidden="true">location_on</span>
-</span>
+<footer id="contato" class="bg-surface-container-low border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-14 lg:py-16">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+<div class="lg:col-span-1">
+<a class="inline-flex flex-col mb-4" href="#inicio">
+<span class="font-headline-sm text-headline-sm text-primary tracking-[0.08em]">LUMINA</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-[0.14em] mt-1">HARMONIZAÇÃO FACIAL</span>
+</a>
 </div>
-</div>
-<!-- Links Columns (Strictly matching JSON strings) -->
-<div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div>
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary-fixed block mb-4">
-              TRATAMENTOS CLÍNICOS
-            </span>
-<ul class="space-y-3 font-body-sm text-body-sm">
-<li>
-<a class="text-surface dark:text-on-surface font-semibold hover:text-secondary-fixed dark:hover:text-secondary transition-colors duration-200" href="#anti-wrinkle">
-                  Tratamentos Antirrugas
-                </a>
-</li>
-<li>
-<a class="text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary transition-colors duration-200" href="#fillers">
-                  Preenchedores Dérmicos e Botox
-                </a>
-</li>
-<li>
-<a class="text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary transition-colors duration-200" href="#harmonization">
-                  Harmonização Facial
-                </a>
-</li>
-<li>
-<a class="text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary transition-colors duration-200" href="#laser">
-                  Terapia Clínica a Laser
-                </a>
-</li>
+<h2 class="font-title-md text-title-md text-primary mb-4">Procedimentos</h2>
+<ul class="space-y-2 font-body-sm text-body-sm text-text-muted">
+<li><a class="hover:text-secondary transition-colors" href="#procedimentos">Preenchimento Labial</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#procedimentos">Contorno de Mandíbula</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#procedimentos">Rinomodelação</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#procedimentos">Toxina Botulínica</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#procedimentos">Bioestimuladores de Colágeno</a></li>
 </ul>
 </div>
 <div>
-<span class="font-label-uppercase text-label-uppercase tracking-widest text-secondary-fixed block mb-4">
-              INFORMAÇÕES DA PRÁTICA
-            </span>
-<ul class="space-y-3 font-body-sm text-body-sm">
-<li>
-<a class="text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary transition-colors duration-200" href="#locations">
-                  Localizações e Horários
-                </a>
-</li>
-<li>
-<a class="text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary transition-colors duration-200" href="#compliance">
-                  Privacidade e Conformidade Clínica
-                </a>
-</li>
+<h2 class="font-title-md text-title-md text-primary mb-4">A Clínica</h2>
+<ul class="space-y-2 font-body-sm text-body-sm text-text-muted">
+<li><a class="hover:text-secondary transition-colors" href="#clinica">Sobre Nós</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#especialistas">Corpo Clínico</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#clinica">Estrutura</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#jornada">Depoimentos</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#oferta">Agendamento</a></li>
 </ul>
 </div>
-</div>
-</div>
-<!-- Bottom Row: Copyright string verbatim from JSON -->
-<div class="pt-8 border-t border-surface/10 flex flex-col sm:flex-row items-center justify-between text-surface-variant font-body-sm text-body-sm gap-4">
 <div>
-          © 2025 Élan Aesthetics &amp; Dermatologia Médica. Todos os direitos reservados.
-        </div>
-<div class="flex items-center gap-6">
-<span class="hover:text-surface transition-colors cursor-pointer">Termos de Consulta</span>
-<span class="hover:text-surface transition-colors cursor-pointer">Carta do Paciente</span>
-<span class="hover:text-surface transition-colors cursor-pointer">Linha de Emergência</span>
+<h2 class="font-title-md text-title-md text-primary mb-4">Contato</h2>
+<address class="not-italic space-y-2 font-body-sm text-body-sm text-text-muted">
+<p>Av. Paulista, 1500 - Bela Vista,<br/>São Paulo - SP</p>
+<p><a class="hover:text-secondary transition-colors" href="https://wa.me/5511999998888">(11) 99999-8888</a></p>
+<p><a class="hover:text-secondary transition-colors" href="mailto:contato@luminaclinic.com.br">contato@luminaclinic.com.br</a></p>
+</address>
 </div>
+<div class="bg-surface-container-lowest rounded-card p-6 self-start">
+<p class="font-title-md text-title-md text-primary mb-4">Fale com um Especialista no WhatsApp</p>
+<a class="bg-accent-gold text-primary hover:bg-accent-gold-dark transition-colors px-5 py-3 rounded-lg font-label-md text-label-md inline-flex items-center gap-2" href="https://wa.me/5511999998888" target="_blank" rel="noopener noreferrer">
+Falar agora
+<span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="mt-12 pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-text-muted">© 2026 LUMINA Harmonização Facial. Todos os direitos reservados.</p>
+<p class="font-body-sm text-body-sm text-text-muted">Segunda a sábado, das 9h às 20h</p>
 </div>
 </div>
 </footer>
-<!-- Interactive JavaScript for Drag/Hover Comparison Slider -->
+<dialog id="video-modal" class="w-[min(92vw,960px)] p-0 rounded-card border border-outline-variant/30 bg-surface-container-lowest shadow-floating" aria-labelledby="video-modal-title">
+<div class="relative">
+<button class="absolute top-4 right-4 z-10 w-11 h-11 rounded-full bg-surface/90 text-primary flex items-center justify-center shadow-soft" type="button" data-close-video aria-label="Fechar vídeo">
+<span class="material-symbols-outlined" aria-hidden="true">close</span>
+</button>
+<video id="clinic-video" class="w-full aspect-video object-cover bg-primary-container" controls preload="none" data-video-source="" aria-label="Vídeo institucional da clínica LUMINA"></video>
+<img id="video-poster" class="w-full aspect-video object-cover" alt="Sala de atendimento da LUMINA" src="assets/images/Imagem%20da%20Cl%C3%ADnica%20%20Sala%20de%20Atendimento%20de%20Luxo.png"/>
+<div id="video-placeholder" class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<span class="bg-primary/75 text-surface px-5 py-2 rounded-full font-label-md text-label-md">Vídeo da Clínica em preparação</span>
+</div>
+</div>
+<div class="p-6 sm:p-8">
+<h2 id="video-modal-title" class="font-headline-sm text-headline-sm text-primary">Conheça a Clínica LUMINA</h2>
+<p class="font-body-sm text-body-sm text-text-muted mt-2">Uma experiência de cuidado criada para respeitar a sua privacidade e a sua identidade.</p>
+</div>
+</dialog>
 <script src="assets/js/main.js"></script>
 </body></html>
