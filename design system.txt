@@ -1,0 +1,544 @@
+# LUMINA — DESIGN SYSTEM
+**Versão extraída da referência visual**
+
+## 1. Direção visual
+
+**Conceito:** luxo discreto, estética editorial, minimalismo premium e beleza natural.
+
+A interface deve transmitir sofisticação por meio da composição, do contraste tipográfico, dos materiais visuais e do uso generoso de espaço negativo. O resultado não deve parecer um template genérico de clínica ou uma interface tecnológica convencional.
+
+- Estilo: editorial de luxo contemporâneo.
+- Personalidade: refinada, acolhedora, feminina e minimalista.
+- Referência estética: revistas de beleza de alto padrão e marcas premium de skincare.
+- Densidade visual: baixa a moderada.
+- Prioridade: fotografia, tipografia, proporções e alinhamento.
+- Acabamento: superfícies suaves, linhas finas, contornos discretos e detalhes em champagne.
+
+## 2. Paleta de cores
+
+Valores aproximados extraídos visualmente da referência.
+
+| Token | Cor | HEX |
+|---|---|---|
+| Background principal | Marfim quente | `#F8F5F0` |
+| Background alternativo | Bege porcelana | `#F0E9DF` |
+| Superfícies de cards | Off-white quente | `#F5F1EB` |
+| Superfície secundária | Bege acinzentado | `#E9E1D7` |
+| Dourado principal | Champagne | `#B99A65` |
+| Dourado claro | Areia dourada | `#D5BC91` |
+| Texto principal | Marrom quase preto | `#302923` |
+| Texto secundário | Taupe | `#80766C` |
+| Texto discreto | Bege acinzentado | `#A49A8F` |
+| Bordas | Bege claro | `#E6DED4` |
+| Branco | Branco quente | `#FFFEFC` |
+
+### Regras de aplicação
+
+- **75–85%:** tons claros, marfim e off-white.
+- **10–20%:** bege e superfícies secundárias.
+- **3–5%:** dourado champagne e detalhes de destaque.
+
+O dourado deve ser usado pontualmente: botões principais, ícones selecionados, pequenos indicadores e elementos decorativos. Não utilizar dourado saturado, amarelo metálico ou gradientes dourados exagerados.
+
+Os textos devem utilizar marrom profundo em vez de preto absoluto, preservando a suavidade da identidade.
+
+## 3. Tipografia
+
+A identidade combina uma serifada editorial com uma sans-serif discreta e funcional.
+
+### Fonte editorial — títulos
+
+Características:
+- Serifada de alto contraste.
+- Aparência elegante e refinada.
+- Peso regular, sem excesso de negrito.
+- Formas delicadas, com proporções clássicas.
+- Espaçamento natural entre caracteres.
+
+Fontes de referência: **Cormorant Garamond**, **DM Serif Display** ou **Playfair Display**.
+
+Aplicação:
+- Título principal da hero.
+- Títulos das seções.
+- Nome da marca.
+- Títulos de procedimentos.
+- Chamadas editoriais e promocionais.
+
+### Fonte funcional — interface
+
+Características:
+- Sans-serif limpa.
+- Desenho contemporâneo e neutro.
+- Excelente legibilidade em tamanhos pequenos.
+- Pesos leves e regulares.
+- Sem aparência geométrica excessivamente tecnológica.
+
+Fontes de referência: **Manrope**, **Inter** ou **DM Sans**.
+
+Aplicação:
+- Menu de navegação.
+- Descrições.
+- Botões.
+- Etiquetas.
+- Informações de contato.
+- Metadados e indicadores.
+
+### Escala tipográfica sugerida
+
+| Elemento | Desktop | Mobile | Peso |
+|---|---:|---:|---|
+| Hero H1 | 48–60 px | 34–42 px | 400 |
+| Títulos H2 | 32–40 px | 27–32 px | 400 |
+| Títulos H3 | 19–24 px | 18–22 px | 400–500 |
+| Texto principal | 15–17 px | 14–16 px | 400 |
+| Texto dos cards | 12–14 px | 12–14 px | 400 |
+| Menu | 11–13 px | 14–16 px | 400 |
+| Microtexto | 9–11 px | 10–12 px | 400 |
+| Botões | 12–14 px | 12–14 px | 500 |
+
+### Comportamento tipográfico
+
+- Títulos editoriais com line-height entre 1,05 e 1,2.
+- Parágrafos com line-height entre 1,5 e 1,7.
+- Textos pequenos com altura de linha suficiente para leitura.
+- Títulos preferencialmente em peso regular.
+- Maiúsculas reservadas a pequenas etiquetas e assinaturas da marca.
+- Evitar bold pesado, sombras tipográficas e fontes display futuristas.
+- Não comprimir títulos para forçar que caibam em uma única linha.
+
+## 4. Layout e grid
+
+### Estrutura geral
+
+A página utiliza uma coluna central de conteúdo, com margens externas generosas e seções claramente separadas.
+
+- Largura máxima sugerida do conteúdo: 1.280 px.
+- Largura máxima de leitura dos parágrafos: 480–600 px.
+- Padding horizontal desktop: 48–72 px.
+- Padding horizontal mobile: 20–24 px.
+- Grid de procedimentos desktop: quatro colunas.
+- Grid de diferenciais desktop: quatro colunas.
+- Grid de metodologia desktop: quatro etapas.
+- Grid mobile: uma coluna ou carrossel horizontal, conforme o componente.
+
+Em telas intermediárias, os grids devem reduzir progressivamente para duas colunas, sem comprimir excessivamente os cards.
+
+### Espaçamento
+
+Utilizar uma escala consistente baseada em múltiplos de 4 px.
+
+| Token | Valor |
+|---|---:|
+| `space-1` | 4 px |
+| `space-2` | 8 px |
+| `space-3` | 12 px |
+| `space-4` | 16 px |
+| `space-5` | 20 px |
+| `space-6` | 24 px |
+| `space-8` | 32 px |
+| `space-10` | 40 px |
+| `space-12` | 48 px |
+| `space-16` | 64 px |
+| `space-20` | 80 px |
+| `space-24` | 96 px |
+
+Espaçamentos recomendados:
+- Entre etiqueta e título: 12–16 px.
+- Entre título e descrição: 16–20 px.
+- Entre descrição e CTA: 24–32 px.
+- Entre título de seção e conteúdo: 28–40 px.
+- Entre seções principais: 64–96 px no desktop e 48–64 px no mobile.
+
+## 5. Cabeçalho e navegação
+
+### Composição
+
+- Fundo marfim ou branco quente.
+- Altura desktop aproximada: 64–76 px.
+- Logo alinhada à esquerda.
+- Navegação central ou distribuída horizontalmente.
+- Informações complementares compactas.
+- CTA principal à direita.
+- Alinhamento vertical rigoroso.
+
+### Logo
+
+- Assinatura tipográfica serifada.
+- Letras maiúsculas.
+- Peso regular.
+- Tracking moderado.
+- Subtítulo pequeno em sans-serif, com espaçamento entre caracteres.
+
+### Menu
+
+- Tipografia sans-serif pequena.
+- Cor marrom suave.
+- Sem sublinhado permanente.
+- Espaçamento uniforme entre os itens.
+- Estados de hover discretos, com mudança sutil de cor.
+
+### Botão do cabeçalho
+
+- Fundo champagne.
+- Texto branco quente.
+- Formato arredondado tipo pill.
+- Altura aproximada: 32–40 px.
+- Padding horizontal: 18–24 px.
+- Sem sombras fortes.
+
+## 6. Hero section
+
+### Composição visual
+
+- Área de fundo marfim quente.
+- Layout em duas áreas: texto à esquerda e fotografia à direita.
+- Fotografia ampla, com presença dominante.
+- Modelo posicionada no lado direito, sem cobrir a área principal do título.
+- Texto alinhado à esquerda.
+- Espaço negativo abundante.
+- Iluminação suave, tons de pele naturais e fundo neutro.
+- Transição visual harmoniosa entre a fotografia e o fundo da página.
+
+### Proporções sugeridas
+
+- Altura desktop: 420–540 px.
+- Área textual: aproximadamente 42–48% da largura.
+- Área fotográfica: aproximadamente 52–58%.
+- Padding interno: 40–56 px.
+- Título com largura controlada para formar de duas a três linhas quando necessário.
+
+### Tratamento da imagem
+
+- Fotografia editorial hiper-realista.
+- Pele natural e luminosa.
+- Contraste moderado.
+- Tons de bege, marfim e castanho.
+- Profundidade de campo suave.
+- Sem filtros artificiais, saturação excessiva ou nitidez exagerada.
+
+A imagem deve ser tratada como parte estrutural do layout, e não como uma ilustração inserida aleatoriamente.
+
+## 7. Barra de diferenciais
+
+### Estrutura
+
+Quatro itens alinhados horizontalmente, com ícone, título e descrição.
+
+- Fundo claro.
+- Divisão sutil em relação à hero e à seção seguinte.
+- Ícones lineares em champagne.
+- Títulos pequenos em marrom profundo.
+- Descrições em taupe.
+- Alinhamento superior consistente.
+
+### Ícones
+
+- Estilo outline.
+- Espessura fina.
+- Tamanho sugerido: 18–22 px.
+- Sem preenchimentos pesados.
+- Sem círculos coloridos grandes como fundo.
+
+### Separadores
+
+Linhas horizontais finas em bege claro. Evitar bordas escuras ou sombras marcantes.
+
+## 8. Cards de procedimentos
+
+### Estrutura
+
+- Quatro cards por linha no desktop.
+- Superfície off-white ou bege muito claro.
+- Imagem na parte superior.
+- Texto abaixo da imagem.
+- Nome do procedimento em destaque.
+- Descrição curta.
+- Preço na parte inferior esquerda, quando aplicável.
+- Seta de navegação na parte inferior direita.
+
+### Proporções
+
+- Raio de borda: 12–18 px.
+- Espaçamento entre cards: 12–20 px.
+- Imagens com proporção aproximada de 4:3.
+- Imagem ocupando a largura integral do card.
+- Padding interno do conteúdo: 12–16 px.
+
+### Fotografias
+
+- Recortes próximos e expressivos.
+- Procedimentos e pele em evidência.
+- Iluminação suave.
+- Tons de pele realistas.
+- Fundos neutros.
+- Linguagem fotográfica uniforme em todos os cards.
+
+### Estados interativos
+
+- Hover com elevação quase imperceptível ou alteração sutil do fundo.
+- Transição de 180–250 ms.
+- Seta com deslocamento mínimo.
+- Sem zoom exagerado ou sombras pesadas.
+
+## 9. Seção institucional
+
+### Composição
+
+- Bloco horizontal com imagem arquitetônica à esquerda.
+- Texto institucional no centro.
+- Indicadores ou estatísticas à direita.
+- Fundo bege porcelana.
+- Cantos arredondados.
+- Conteúdo alinhado verticalmente.
+
+### Imagem
+
+- Fotografia ampla da arquitetura da clínica.
+- Tons quentes e neutros.
+- Perspectiva aberta.
+- Acabamentos premium.
+- Iluminação arquitetônica integrada.
+- Ausência de elementos desnecessários.
+
+### Indicadores
+
+- Números em tipografia serifada.
+- Tamanho maior que o texto auxiliar.
+- Cor marrom profundo.
+- Descrições em sans-serif pequena.
+- Separação vertical entre indicadores.
+
+### Contêiner
+
+- Raio de borda: 14–20 px.
+- Padding: 20–28 px.
+- Gap entre colunas: 20–32 px.
+
+## 10. Metodologia e etapas
+
+### Composição
+
+Título editorial centralizado, seguido por quatro etapas distribuídas horizontalmente.
+
+- Fundo claro.
+- Ícones circulares em champagne.
+- Numeração ou símbolos discretos.
+- Linhas finas conectando as etapas.
+- Títulos curtos.
+- Descrições centralizadas e compactas.
+
+### Ícones circulares
+
+- Diâmetro: 34–42 px.
+- Fundo dourado champagne.
+- Ícone em marfim.
+- Formato perfeitamente circular.
+
+### Conectores
+
+- Linha horizontal fina.
+- Cor bege-dourado.
+- Pequenos indicadores direcionais.
+- Sem setas grandes ou animações chamativas.
+
+No mobile, as etapas devem ser reorganizadas verticalmente, mantendo a ordem, os conectores e o alinhamento.
+
+## 11. Banner promocional
+
+### Composição
+
+- Banner horizontal de grande largura.
+- Fundo bege claro.
+- Fotografia de beleza ocupando a metade direita.
+- Texto à esquerda.
+- Transição suave entre imagem e fundo.
+- CTA compacto.
+- Bordas arredondadas.
+
+### Proporções
+
+- Altura desktop: 150–210 px.
+- Raio de borda: 14–20 px.
+- Padding: 24–36 px.
+- Área textual: aproximadamente 40–45%.
+- Área fotográfica: aproximadamente 55–60%.
+
+### Tratamento fotográfico
+
+A fotografia pode ter uma sobreposição bege muito suave na região de transição, garantindo integração visual e legibilidade do texto. O efeito não deve parecer um filtro opaco aplicado à imagem inteira.
+
+## 12. Botões
+
+### Primário
+
+- Fundo: `#B99A65`.
+- Texto: `#FFFEFC`.
+- Altura: 38–46 px.
+- Padding horizontal: 20–26 px.
+- Border-radius: 999 px.
+- Tipografia sans-serif.
+- Peso 500.
+- Ícone ou seta opcional, de tamanho pequeno.
+
+### Secundário
+
+- Fundo transparente ou branco quente.
+- Texto marrom profundo.
+- Borda fina bege.
+- Mesmo sistema de altura e raio do botão primário.
+
+### Estados
+
+- Hover: pequena variação de luminosidade.
+- Active: leve redução visual de escala, se apropriado.
+- Focus: indicador acessível e visível.
+- Disabled: contraste reduzido, sem perder legibilidade.
+
+Não utilizar gradientes metálicos, sombras volumosas ou efeitos luminosos.
+
+## 13. Rodapé
+
+### Estrutura
+
+- Fundo marfim.
+- Linha superior fina em bege.
+- Logo à esquerda.
+- Colunas de links organizadas horizontalmente.
+- Coluna de contato e CTA.
+- Copyright na parte inferior.
+
+### Tipografia
+
+- Títulos das colunas: sans-serif de 11–13 px, peso 500.
+- Links: 10–12 px.
+- Informações auxiliares: 9–11 px.
+- Logo: serifada, alinhada ao sistema visual do cabeçalho.
+
+### Espaçamento
+
+- Padding vertical: 32–48 px.
+- Espaçamento entre colunas: 24–36 px.
+- Separação do copyright: 24–32 px.
+
+No mobile, as colunas devem ser empilhadas com espaçamento adequado, evitando textos excessivamente pequenos.
+
+## 14. Bordas, sombras e superfícies
+
+### Bordas
+
+- Cor: `#E6DED4`.
+- Espessura: 1 px.
+- Aplicação discreta em cards, separadores e controles.
+
+### Sombras
+
+A referência privilegia superfícies limpas, com sombras quase imperceptíveis.
+
+- Sombra padrão: nenhuma.
+- Elevação de card: sombra difusa muito leve, somente quando necessária.
+- Evitar sombras pretas, contornos pesados e aparência de interface flutuante.
+
+### Raios de borda
+
+| Elemento | Border-radius |
+|---|---:|
+| Botões pill | 999 px |
+| Cards de procedimentos | 12–18 px |
+| Banner | 14–20 px |
+| Bloco institucional | 14–20 px |
+| Imagens | 8–14 px |
+| Inputs | 8–12 px |
+
+## 15. Direção de fotografia
+
+### Linguagem visual
+
+- Fotografia de beleza editorial.
+- Retratos em close-up e meio-corpo.
+- Pele luminosa, natural e com textura realista.
+- Iluminação difusa e quente.
+- Fundo bege, marfim ou taupe.
+- Contraste moderado.
+- Profundidade de campo suave.
+- Composição limpa e sofisticada.
+
+### Arquitetura
+
+- Mármore claro.
+- Superfícies de pedra.
+- Metais champagne.
+- Vidro fumê.
+- Madeira em tons quentes.
+- Iluminação indireta.
+- Curvas arquitetônicas e linhas limpas.
+
+### Consistência
+
+Todas as imagens devem compartilhar temperatura de cor, nível de contraste e acabamento semelhantes. Misturar fotografias frias, imagens muito saturadas ou renders com aparência artificial compromete a identidade premium.
+
+## 16. Responsividade
+
+### Desktop
+
+- Layout amplo e editorial.
+- Hero em duas colunas.
+- Quatro cards por linha.
+- Diferenciais e metodologia horizontais.
+- Rodapé em colunas.
+
+### Tablet
+
+- Hero com proporções ajustadas.
+- Dois cards por linha.
+- Diferenciais em duas colunas.
+- Redução de margens e espaços verticais.
+
+### Mobile
+
+- Hero reorganizada para preservar a hierarquia entre título e fotografia.
+- Títulos com quebras de linha intencionais.
+- Botões confortáveis para toque.
+- Cards em duas colunas ou carrossel horizontal.
+- Seções empilhadas verticalmente.
+- Metodologia em coluna.
+- Rodapé organizado em blocos.
+- Imagens sem distorção e sem cortes que eliminem os elementos principais.
+
+A responsividade deve preservar a identidade editorial, em vez de simplesmente reduzir todos os elementos do desktop.
+
+## 17. Tokens globais sugeridos
+
+- `color-bg-primary`: `#F8F5F0`
+- `color-bg-secondary`: `#F0E9DF`
+- `color-surface`: `#F5F1EB`
+- `color-accent`: `#B99A65`
+- `color-accent-light`: `#D5BC91`
+- `color-text-primary`: `#302923`
+- `color-text-secondary`: `#80766C`
+- `color-border`: `#E6DED4`
+- `font-display`: Cormorant Garamond
+- `font-body`: Manrope
+- `radius-card`: `16px`
+- `radius-section`: `18px`
+- `radius-button`: `999px`
+- `border-default`: `1px solid #E6DED4`
+- `shadow-default`: `none`
+- `transition-default`: `200ms ease`
+- `container-max`: `1280px`
+- `section-spacing-desktop`: `80px`
+- `section-spacing-mobile`: `56px`
+
+## 18. Regras de consistência visual
+
+1. Preservar a predominância de tons claros e quentes.
+2. Utilizar a tipografia serifada para criar identidade editorial, não para todos os textos.
+3. Reservar o dourado para acentos visuais.
+4. Manter margens, alinhamentos e espaçamentos consistentes.
+5. Priorizar imagens de alta qualidade e composição fotográfica coerente.
+6. Evitar sombras pesadas, gradientes saturados e excesso de elementos decorativos.
+7. Manter os cards visualmente leves, com bordas discretas.
+8. Usar o espaço negativo como parte essencial da composição.
+9. Aplicar a mesma linguagem de ícones, botões e raios de borda em todas as seções.
+10. Garantir que a versão mobile preserve a elegância e a hierarquia da versão desktop.
+
+**Resultado esperado:** uma interface editorial premium, clara e refinada, com fotografia protagonista, tipografia elegante, acentos champagne e componentes discretos, coerente com o universo de uma clínica de harmonização facial de alto padrão.
