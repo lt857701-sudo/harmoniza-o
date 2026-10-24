@@ -1,12 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "assets/css/style.css", "use": "@vercel/static" },
-    { "src": "assets/js/main.js", "use": "@vercel/static" },
-    { "src": "assets/images/(.*)", "use": "@vercel/static" }
-  ],
   "routes": [
     { "src": "/assets/(.*)", "headers": { "cache-control": "public, max-age=31536000, immutable" } },
     { "src": "/(.*)", "dest": "/index.html" }
